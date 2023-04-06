@@ -1,12 +1,13 @@
-import { Box, Image } from '@chakra-ui/react';
-import React from 'react';
+import { Image } from '@chakra-ui/image';
+import { Box } from '@chakra-ui/react';
+import * as React from 'react';
 
-const Logo = () => {
+function Logo () {
   return (
-    <Box w={70} h={70} >
-      <Image borderRadius={'50px'} src='/public/logos/logoAVG.svg' />
+    <Box w={50} h={50} >
+      <Image borderRadius={'50px'} src='/public/logos/logo1.svg' alt='logo' />
     </Box>
   )
-}
+} 
 
 export default Logo
