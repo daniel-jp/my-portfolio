@@ -3,8 +3,8 @@ import { GitBranch, GithubLogo, XCircle } from 'phosphor-react';
 import * as React from 'react';
 import { BsGithub } from 'react-icons/bs';
 
-import Logo from '../logo/Logo';
 import NavItem from './NavItem';
+import Logo from '../Logo';
 
 
  

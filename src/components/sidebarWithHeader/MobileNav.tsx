@@ -19,8 +19,7 @@ import { Bell, UserCircleGear,Globe, DotsThreeVertical, List, Gear, Power } from
 import * as React from 'react';
 
 import Layout from '../../Layout/Layout';
-import Logo2 from '../logo/Logo2';
-
+import Logo2 from '../Logo2';
 interface MobileProps extends FlexProps {
   onOpen: () => void;
 }

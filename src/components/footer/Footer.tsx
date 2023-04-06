@@ -2,7 +2,7 @@ import { Box, chakra, Container, Stack, Text, useColorModeValue, VisuallyHidden 
 import { InstagramLogo, LinkedinLogo, TwitterLogo } from 'phosphor-react';
 import { ReactNode } from 'react';
 
-import Logo2 from '../logo/Logo2';
+import Logo2 from '../Logo2';
 
 
 const SocialButton = ({
