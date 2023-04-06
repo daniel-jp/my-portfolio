@@ -8,8 +8,7 @@ import React, { ReactNode, ReactText } from 'react';
 import AboutPage from '../../pages/AboutPage';
 import Footer from '../footer/Footer';
 import HomComponent from '../homComponent/HomComponent';
-import Logo from '../Logo';
-import Logo2 from '../logo/Logo2';
+
 import MobileNav from './MobileNav';
 import SidebarContent from './SidebarContent';
 
