@@ -5,21 +5,23 @@ import {
   FlexProps,
   HStack,
   IconButton,
+  Image,
   Menu,
   MenuButton,
   MenuDivider,
   MenuItem,
   MenuList,
-  Stack,Image,
+  Stack,
   Text,
   useColorModeValue,
   VStack,
 } from '@chakra-ui/react';
-import { Bell, UserCircleGear,Globe, DotsThreeVertical, List, Gear, Power } from 'phosphor-react';
+import { Bell, DotsThreeVertical, Gear, Globe, List, Power, UserCircleGear } from 'phosphor-react';
 import * as React from 'react';
 
 import Layout from '../../Layout/Layout';
 import Logo2 from '../Logo2';
+
 interface MobileProps extends FlexProps {
   onOpen: () => void;
 }
@@ -63,7 +65,7 @@ function MobileNav ({ onOpen, ...rest }: MobileProps)  {
 
       <HStack spacing={{ base: '0', md: '6' }}>
          <Stack p={1} color="white"  borderRadius={"50%"}  _hover={{cursor:"pointer", bg:"gray.600",}}>
-           <Image borderRadius={"50%"} h="22px"  w="22px" src={"/public/logos/sett.gif"}/>                  
+           <Image borderRadius={"50%"} h="22px"  w="22px" src={"/assets/logos/sett.gif"}/>                  
         </Stack>
         
         <Flex alignItems={'center'}>
