@@ -22,11 +22,12 @@ function PortfolioComponent({iconc, titlec,textc, imgc}:any){
   return( 
 <Box w={"full"} maxW={"7xl"} 
     position="relative" 
-    bgPosition="center" backgroundRepeat="no-repeat"
+    bgPosition="center" backgroundRepeat="no-repeat" visibility={'visible'}
     backgroundSize="cover" h={199} 
     bgImage={`url(${imgc})`} _hover={{
       opacity:'0.8',
-      padding: "6px",}}>
+      padding: "6px",visibility:'visible',
+      zIndex:"1",}}> 
 
 
    <Card  opacity='0.8'   mb={2}
