@@ -31,7 +31,6 @@ function AboutPage(){
             <AboutComponent  key={aboutprops.id} 
             title={aboutprops.title} 
             text={aboutprops.text} 
-            button={aboutprops.button}
             icon={aboutprops.icon} 
             />
           ))
