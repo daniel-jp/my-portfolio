@@ -93,18 +93,8 @@ function AboutPage(){
      </Stack>
        <Box left={-2} position={"absolute"} w={5} h={5} borderRadius={"50%"} bg={"red.500"}></Box>
      </Box>
-     <Box  ml={{base:4, md:270}}  bg={"red.200"} w={200} h={200}>
 
-      <Text>Texting</Text>
-     </Box>
-     <Box  ml={{base:4, md:270}}  bg={"red.200"} w={200} h={200}>
-
-      <Text>Texting</Text>
-     </Box>
-     <Box  ml={{base:4, md:270}}  bg={"red.200"} w={200} h={200}>
-
-      <Text>Texting</Text>
-     </Box>
+    
 
     </Flex>
     </>
