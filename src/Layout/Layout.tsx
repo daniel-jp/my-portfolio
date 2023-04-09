@@ -1,6 +1,6 @@
 import { Box, Container, ContainerProps, useColorModeValue } from '@chakra-ui/react';
 
-import Footer from '../components/footer/Footer';
+import Footer from '../components/footerComponent/FooterComponent';
 
 function Layout({ children, ...rest }:ContainerProps){
 

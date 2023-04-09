@@ -6,9 +6,10 @@ import { Bell, CaretDown, Layout, List } from 'phosphor-react';
 import React, { ReactNode, ReactText } from 'react';
 
 import AboutPage from '../../pages/AboutPage';
-import Footer from '../footer/Footer';
+import PortfolioPage from '../../pages/PortfolioPage';
+import ServicePage from '../../pages/ServicePage';
+import Footer from '../footerComponent/FooterComponent';
 import HomComponent from '../homComponent/HomComponent';
-
 import MobileNav from './MobileNav';
 import SidebarContent from './SidebarContent';
 
@@ -40,14 +41,14 @@ export default function SidebarWithHeader({ children,}: {children: ReactNode;}) 
       </Drawer>
       {/* mobilenav */}
       <MobileNav onOpen={onOpen} />
-        
-       <AboutPage />
-       {/* <HomComponent/> <Services/>
-      <Portfolio/>
+       
+       <PortfolioPage/>
+       {/* <HomComponent/>   <AboutPage />
+     <ServicePage />
       <Skills/>
       <Contact/> */}
-     
-        {/* <Box ml={{ base: 0, md: 60 }} p="4">
+{/*      
+        <Box ml={{ base: 0, md: 60 }} p="4">
         {children}
       </Box>   */}
     

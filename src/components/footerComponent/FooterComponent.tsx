@@ -54,7 +54,8 @@ export default function SmallWithLogoLeft() {
         <Text>Copyright © 2023 Portfolio webSite. All rights reserved | Code Vite-react TS & Chakra-ui </Text>
         <Stack direction={'row'} spacing={6}>
           <SocialButton label={'Twitter'} href={'#'}>
-          <TwitterLogo color={"#9A4CAD"} size={32} />          </SocialButton>
+          <TwitterLogo color={"#9A4CAD"} size={32} />          
+          </SocialButton>
           <SocialButton label={'YouTube'} href={'#'}>
           <LinkedinLogo color={"#9A4CAD"} size={32} />
           </SocialButton>

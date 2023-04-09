@@ -1,17 +1,7 @@
-import {
-  Box,
-  Button,
-  Container,
-  Flex,
-  Heading,
-  Image,
-  keyframes,
-  Stack,
-  Text
-} from '@chakra-ui/react';
+import { Box, Button, Container, Flex, Heading, Image, keyframes, Stack, Text } from '@chakra-ui/react';
 import { ArrowCircleDown, Download } from 'phosphor-react';
 
-import Footer from '../footer/Footer';
+import Footer from '../footerComponent/FooterComponent';
 
 export default function homComponent() {
 

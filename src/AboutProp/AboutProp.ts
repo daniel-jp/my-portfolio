@@ -6,7 +6,7 @@ export default function AboutProp(){
   const aboutProps =[
     { id: 1,
       title: 'Freelancer Avalabbel',
-      text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.',
+      text: 'Techs: SpringBoot, React  & Angular',
       icon: Code ,
     },
     { id: 2,

@@ -1,5 +1,5 @@
 import { CheckIcon } from '@chakra-ui/icons';
-import { Box, Container, Flex, Icon, IconProps, Stat, Text, useColorModeValue, VStack } from '@chakra-ui/react';
+import { Box, Container, Flex, Icon, Stat, Text, useColorModeValue, VStack } from '@chakra-ui/react';
 import { IconType } from 'react-icons/lib';
 
 
