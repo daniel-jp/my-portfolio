@@ -1,8 +1,9 @@
 import { Box, Flex, Heading, SimpleGrid, Stack, Text } from '@chakra-ui/react';
 import { CalendarCheck } from 'phosphor-react';
 
-import AboutProp from '../aboutProp/AboutProp';
+
 import AboutComponent from '../components/aboutComponent/AboutComponent';
+import AboutProp from '../aboutProp/AboutProp';
 
 function AboutPage(){
   const aboutProp = AboutProp();
@@ -27,11 +28,12 @@ function AboutPage(){
     <Box>
       <SimpleGrid columns={{ base: 1, md:3}} spacing={{ base: 2, md: 3 }}>
         {
-          aboutProp.map(( aboutprops, id ) => (
-            <AboutComponent  key={id} 
-            title={aboutprops.title} 
-            text={aboutprops.text} 
-            icon={aboutprops.icon} 
+          aboutProp.map(( aboutpr, id ) => (
+            <AboutComponent 
+            title={aboutpr.title} 
+            text={aboutpr.text} 
+            icon={aboutpr.icon} 
+            key={id} 
             />
           ))
         }
