@@ -4,31 +4,31 @@ import { Cake, Code, GlobeHemisphereEast, MapPinLine, RedditLogo } from 'phospho
 export default function AboutProp(){
   
   const aboutProps =[
-    { id: 1,
+    { 
       title: 'Freelancer Avalabbel',
       text: 'Techs: SpringBoot, React  & Angular',
       icon: Code ,
     },
-    { id: 2,
+    { 
       title: 'BirthDay',
       text: '10 / September...',
       icon: Cake,
     }
     ,
-    { id: 3,
+    { 
       title: 'Native country',
       text: 'Angola',
-      icon:GlobeHemisphereEast,
-    }, 
-    { id: 4,
+      icon: GlobeHemisphereEast,
+    },  
+    { 
       title: 'BirthDay City',
       text: 'Zaire-Soyo',
-      icon:RedditLogo,
+      icon: RedditLogo,
     },
-    { id: 5,
+    { 
       title: 'Country of Residence',
       text: 'Morroco-Rabat',
-      icon:MapPinLine,
+      icon: MapPinLine,
     }
 
   ]

@@ -62,7 +62,7 @@ function AboutPage(){
           <Box><Text fontSize={['xl','2xl']}  bgGradient='linear(to-l, #8222AF,#9B19D9, #9B19D9, #386283)'
            bgClip='text' fontWeight={'bold'} textAlign={{base:"justify", md:"justify",lg:"start"}}  >Master’s in Software and Data Engineering</Text></Box>
           <Box><Text textAlign={{base:"justify", md:"justify",lg:"start"}} color={"gray.300"}>Right after I finished my degree in Morocco, I joined the Masters in Data Engineering and Software Development at Mohamed V University, Faculty of Sciences.</Text></Box> 
-          </SimpleGrid> 
+          </SimpleGrid>  
           </Box>
     </Stack>
     <Stack  rounded={4} mr={{base:0, md:10}} my={4} py={4}  bg={"gray.900"}  marginBottom={"0"} px={2} pt={5} maxH={"full"} display={'flex'}>

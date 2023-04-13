@@ -14,7 +14,7 @@ function AboutComponent ({title,text,icon}:any) {
             px={{ base:'2', md: '2' }}
             bg={"blackAlpha.50"}
             py={'3'}
-          _hover={{
+          _hover={{ 
             transform: 'scale(1.1)',
           
           }}
