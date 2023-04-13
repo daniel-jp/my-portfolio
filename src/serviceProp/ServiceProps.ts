@@ -14,7 +14,7 @@ export default function ServiceProps() {
   }, {id:2,
     icon:Laptop,
     title:"Back-End Developer",
-    text:"I develop web services or REST APIs with java language using SpringBoot framework and testing with Postman and Insomnia.",
+    text:"I develop web services or REST APIs with java using SpringBoot and testing with Postman and Insomnia.",
     button:"Read more"
   
 }, {id:3,

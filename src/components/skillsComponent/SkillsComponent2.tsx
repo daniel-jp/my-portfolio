@@ -9,11 +9,11 @@ import {
 import React, { useState } from 'react';
 
 
-function SkillsComponent({language,text,img}:any){
+function SkillsComponent2({language,text,img}:any){
 
   return(
    <>
-      <Stack py={'5'}  
+      <Stack py={'5'} 
       shadow={'xl'} bg={"gray.700"}  w={"full"} 
       border={'1px solid'}
       borderColor={useColorModeValue('gray.800', 'gray.500')}
@@ -39,4 +39,4 @@ function SkillsComponent({language,text,img}:any){
    </>
   )
 }
-export default SkillsComponent
+export default SkillsComponent2

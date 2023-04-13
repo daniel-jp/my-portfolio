@@ -1,7 +1,7 @@
 import { Box, Flex, Heading, SimpleGrid, Stack, Text } from '@chakra-ui/react';
 import { CalendarCheck } from 'phosphor-react';
 
-import AboutProp from '../AboutProp/AboutProp';
+import AboutProp from '../aboutProp/AboutProp';
 import AboutComponent from '../components/aboutComponent/AboutComponent';
 
 function AboutPage(){

@@ -24,7 +24,7 @@ const serviceProps = ServiceProps();
         </Text>
       </Stack>
 <Box>
-    <SimpleGrid columns={{base:1, md:2,lg:3}} p={3} spacing={{ base: 2, md: 4 }}>
+    <SimpleGrid columns={{base:1, md:2,lg:3}} p={{base:3,md:10}} spacing={{ base: 2, md: 4 }}>
         {
           serviceProps.map((servicep, id)=>(
 

@@ -44,7 +44,7 @@ export default function PortfolioProps(){
     }
     ,
     { id: 7,
-      titlec: 'RestAPI & DTO',
+      titlec: 'Rest API & DTO',
       textc: 'created with SpringBoot, Mysql and POSTMAN',
       iconc:ArrowSquareOut,
       imgc:"../../assets/cardImg/Card6.png",

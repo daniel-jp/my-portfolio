@@ -29,9 +29,9 @@ function PortfolioComponent({iconc, titlec,textc, imgc}:any){
       padding: "6px",visibility:'visible',
       zIndex:"1",}}> 
 
-
-   <Card  opacity='0.8'   mb={2}
-      bgGradient={"linear(to-l,#7928CA, #FF0080, #171923, #1A202C, #2D3748)"}
+ {/* */}
+   <Card  opacity='0.7'   mb={2} 
+      bgGradient={"linear(to-l, #FF0080, #171923, #1A202C, #2D3748)"}
        zIndex={-1}
       align={"center"} pt={4} px={4} h={199} w='100%' maxH={"100%"}>
           

@@ -1,13 +1,13 @@
 import '@fontsource/roboto/500.css';
 
 import { BellIcon } from '@chakra-ui/icons';
-import { Box, Container, Drawer, DrawerContent, useColorModeValue, useDisclosure } from '@chakra-ui/react';
-import { Bell, CaretDown, Layout, List } from 'phosphor-react';
+import { Box, Drawer, DrawerContent, useDisclosure } from '@chakra-ui/react';
 import React, { ReactNode, ReactText } from 'react';
 
 import AboutPage from '../../pages/AboutPage';
 import PortfolioPage from '../../pages/PortfolioPage';
 import ServicePage from '../../pages/ServicePage';
+import SkillPage from '../../pages/SkillPage';
 import Footer from '../footerComponent/FooterComponent';
 import HomComponent from '../homComponent/HomComponent';
 import MobileNav from './MobileNav';
@@ -40,12 +40,13 @@ export default function SidebarWithHeader({ children,}: {children: ReactNode;}) 
         </DrawerContent>
       </Drawer>
       {/* mobilenav */}
-      <MobileNav onOpen={onOpen} />
-        <AboutPage /> <ServicePage />
-       <PortfolioPage/>
+      <MobileNav onOpen={onOpen} /> 
+     
+       <SkillPage/>
        {/* <HomComponent/>  
-    
-      <Skills/>
+     <AboutPage />  <PortfolioPage/> 
+       <ServicePage />
+     
       <Contact/> */}
 {/*      
         <Box ml={{ base: 0, md: 60 }} p="4">
