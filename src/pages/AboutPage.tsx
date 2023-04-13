@@ -27,8 +27,8 @@ function AboutPage(){
     <Box>
       <SimpleGrid columns={{ base: 1, md:3}} spacing={{ base: 2, md: 3 }}>
         {
-          aboutProp.map(( aboutprops, key ) => (
-            <AboutComponent  key={aboutprops.id} 
+          aboutProp.map(( aboutprops, id ) => (
+            <AboutComponent  key={id} 
             title={aboutprops.title} 
             text={aboutprops.text} 
             icon={aboutprops.icon} 

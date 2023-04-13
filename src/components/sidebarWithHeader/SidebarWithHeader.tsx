@@ -40,12 +40,14 @@ export default function SidebarWithHeader({ children,}: {children: ReactNode;}) 
         </DrawerContent>
       </Drawer>
       {/* mobilenav */}
-      <MobileNav onOpen={onOpen} /> 
-     
+      <MobileNav onOpen={onOpen} />   
+      <AboutPage /> 
+       <ServicePage />
+      <PortfolioPage/> 
        <SkillPage/>
        {/* <HomComponent/>  
-     <AboutPage />  <PortfolioPage/> 
-       <ServicePage />
+   
+      
      
       <Contact/> */}
 {/*      
