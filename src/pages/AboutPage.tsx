@@ -3,7 +3,7 @@ import { CalendarCheck } from 'phosphor-react';
 
 
 import AboutComponent from '../components/aboutComponent/AboutComponent';
-import AboutProp from '../aboutProp/AboutProp';
+import AboutProp from '../../src/aboutProp/AboutProp';
 
 function AboutPage(){
   const aboutProp = AboutProp();
