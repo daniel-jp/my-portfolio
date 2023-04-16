@@ -3,7 +3,7 @@ import { CalendarCheck } from 'phosphor-react';
 
 
 import AboutComponent from '../components/aboutComponent/AboutComponent';
-import AboutProp from '../../src/aboutProp/AboutProp';
+import AboutProp from '../aboutProp/AboutProp';
 
 function AboutPage(){
   const aboutProp = AboutProp();
@@ -28,11 +28,11 @@ function AboutPage(){
     <Box>
       <SimpleGrid p={{base:0, sm:0, md:0, lg:10}} columns={{ base: 1,sm:1, md:1,lg:3}} spacing={{ base: 2, md: 3 }}>
         {
-          aboutProp.map(( aboutpr) => (
+          aboutProp.map(( aboutprop ) => (
             <AboutComponent 
-            title={aboutpr.title} 
-            text={aboutpr.text} 
-            icon={aboutpr.icon} 
+            title={aboutprop.title} 
+            text={aboutprop.text} 
+            icon={aboutprop.icon} 
            
             />
           )) 
