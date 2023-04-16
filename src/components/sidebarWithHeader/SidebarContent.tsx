@@ -3,8 +3,8 @@ import { GitBranch, GithubLogo, XCircle } from 'phosphor-react';
 import * as React from 'react';
 import { BsGithub } from 'react-icons/bs';
 
-import NavItem from './NavItem';
 import Logo from '../Logo';
+import NavItem from './NavItem';
 
 
  
@@ -50,22 +50,11 @@ function SidebarContent ({ onClose, ...rest }: SidebarProps)  {
       </Flex>
 
       {LinkItems.map((link) => (
-        <NavItem key={link.name}>
+        <NavItem key={link.name} color={"gray.500"} fontSize={"lg"}>
           {link.name}
         </NavItem>
       ))}
-     <Flex px={4}   
-        position="fixed"
-        bottom="4" 
-        align={'center'}> 
-        <IconButton bg={"#9A4CAD"}
-        icon={<BsGithub color='black' size={22}/>}
-        borderRadius="50%" 
-        aria-label={'github'}
-        _hover={{ transform: "scale(1.2)" }}
-        _active={{ transform: "scale(0.9)" }}/>  
-        <Text ml={2} colorScheme='white'>GitHub</Text>
-      </Flex>
+   
     </Box>
     </>
   );

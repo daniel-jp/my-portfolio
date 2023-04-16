@@ -38,9 +38,9 @@ const SocialButton = ({
 
 export default function SmallWithLogoLeft() {
   return (
-    <Box h={'full'}
+    <Box h={'full'}  ml={{base:0, md:240}} 
       bg={useColorModeValue('gray.900', 'gray.900')}
-      color={useColorModeValue('gray.700', 'gray.200')}>
+      color={useColorModeValue('gray.500', 'gray.200')}>
          {/* position={'abusolute'} */}
       <Container
         as={Stack}
@@ -51,13 +51,13 @@ export default function SmallWithLogoLeft() {
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}>
         <Logo2/>
-        <Text>Copyright © 2023 Portfolio webSite. All rights reserved | Code Vite-react TS & Chakra-ui </Text>
+        <Text textAlign={"center"}> Copyright © 2023 Portfolio webSite. All rights reserved | Code Vite-react TS & Chakra-ui </Text>
         <Stack direction={'row'} spacing={6}>
           <SocialButton label={'Twitter'} href={'#'}>
           <TwitterLogo color={"#9A4CAD"} size={32} />          
           </SocialButton>
           <SocialButton label={'YouTube'} href={'#'}>
-          <LinkedinLogo color={"#9A4CAD"} size={32} />
+          <LinkedinLogo  color={"#9A4CAD"} size={32} />
           </SocialButton>
           <SocialButton  label={'Instagram'} href={'#'}>
           <InstagramLogo color={"#9A4CAD"} size={32} />

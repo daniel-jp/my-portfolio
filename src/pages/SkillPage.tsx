@@ -1,9 +1,8 @@
-import { Box, Container, Flex, Heading, SimpleGrid, Stack, Text, chakra } from '@chakra-ui/react';
+import { Box, chakra, Container, Flex, Heading, SimpleGrid, Stack, Text } from '@chakra-ui/react';
 import React, { Component } from 'react';
 
 import SkillsComponent from '../components/skillsComponent/SkillsComponent';
 import SkillsComponent2 from '../components/skillsComponent/SkillsComponent2';
-
 import SkillProp from '../skillProp/SkillProp';
 import SkillProp2 from '../skillProp/SkillProp2';
 
@@ -15,8 +14,8 @@ function SkillPage (){
       <div>
     
 
-<Box bg={"gray.800"}   ml={{base:0, md:240}}  maxW="7xl" pt={5} px={{ base: 2, sm: 12, md: 17}}>
-<chakra.h1 pt={100} 
+<Box bg={"gray.800"}   ml={{base:0, md:240}}  maxW="7xl" pt={5} pb={20} p={{base:3,sm:3, md:3, lg:20}} >
+<chakra.h1 pt={50} 
         bgGradient='linear(to-l, #CA58F2, #3E91C0, #3E91C0, #CA58F2, #CA58F2, #CA58F2)' 
         bgClip='text'
         fontSize={'4xl'}
@@ -34,7 +33,7 @@ function SkillPage (){
         fontWeight={'bold'} >
          Frontend: Js, CSS & Frameworks
       </chakra.h4>
-      <SimpleGrid columns={{ base: 1, md: 2,lg:3 }} spacing={{ base: 3, lg: 3 }}>
+      <SimpleGrid columns={{ base: 1,sm:1, md: 1,lg:3 }}  spacing={{ base: 3, lg: 3 }}>
       {  
          skillpro.map((skillpr, id)=>(
 
@@ -57,7 +56,7 @@ function SkillPage (){
         fontWeight={'bold'} >
         Backend: Java & Frameworks
       </chakra.h4>
-      <SimpleGrid columns={{ base: 1, md: 2,lg:3 }} spacing={{ base: 3, lg: 3 }}>
+      <SimpleGrid  columns={{ base:1,sm:1, md:1,lg:3 }}  spacing={{ base: 3, lg: 3 }}>
       {  
          skillpro2.map((skillpr2, id)=>(
 
@@ -71,7 +70,6 @@ function SkillPage (){
        
        }
       </SimpleGrid>
-     <Box w={200} h={100}></Box>
     </Box>
       </div>
     )

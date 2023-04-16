@@ -21,6 +21,7 @@ import * as React from 'react';
 
 import Layout from '../../Layout/Layout';
 import Logo2 from '../Logo2';
+import Logo from '../Logo';
 
 interface MobileProps extends FlexProps {
   onOpen: () => void;
@@ -35,7 +36,7 @@ function MobileNav ({ onOpen, ...rest }: MobileProps)  {
       transition={"ease-in-out"}
       transitionDuration={"200s"}
       top={0}
-      left={0}
+      left={0} 
       right={0}
       zIndex={1000}
     
@@ -60,7 +61,7 @@ function MobileNav ({ onOpen, ...rest }: MobileProps)  {
         fontSize="2xl"
         fontFamily="monospace"
         fontWeight="bold">
-           <Logo2 />
+           <Logo />
       </Text>
 
       <HStack spacing={{ base: '0', md: '6' }}>

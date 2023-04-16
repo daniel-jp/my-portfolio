@@ -16,14 +16,14 @@ import { SliderMark } from '@chakra-ui/react';
     language:"JS",
     text:"Angular", 
     img:"angular.svg",
-
+ 
 
   
   }
     ,{id:3,
     language:"CSS",
     text:"Bootstrap", 
-    img:"bootstrap.svg",
+    img:"bootstrap-4.svg",
 
   
   },

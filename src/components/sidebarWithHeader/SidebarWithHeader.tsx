@@ -1,17 +1,18 @@
 import '@fontsource/roboto/500.css';
 
 import { BellIcon } from '@chakra-ui/icons';
-import { Box, Drawer, DrawerContent, useDisclosure } from '@chakra-ui/react';
+import { Box, Drawer, DrawerContent, Flex, useDisclosure } from '@chakra-ui/react';
 import React, { ReactNode, ReactText } from 'react';
 
 import AboutPage from '../../pages/AboutPage';
+import ContactPage from '../../pages/ContactPage';
 import PortfolioPage from '../../pages/PortfolioPage';
 import ServicePage from '../../pages/ServicePage';
 import SkillPage from '../../pages/SkillPage';
 import Footer from '../footerComponent/FooterComponent';
-import HomComponent from '../homComponent/HomComponent';
 import MobileNav from './MobileNav';
 import SidebarContent from './SidebarContent';
+import HomComponent from '../homComponent/HomComponent';
 
 
 
@@ -22,7 +23,7 @@ export default function SidebarWithHeader({ children,}: {children: ReactNode;}) 
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
-    <Box>
+    <Box h={"full"} m={0}  p={0} alignContent={"center"} >
       <SidebarContent
         onClose={() => onClose}
         display={{ base: 'none', md: 'block' }}/>
@@ -41,15 +42,16 @@ export default function SidebarWithHeader({ children,}: {children: ReactNode;}) 
       </Drawer>
       {/* mobilenav */}
       <MobileNav onOpen={onOpen} />   
-      <AboutPage /> 
-       <ServicePage />
-      <PortfolioPage/> 
-       <SkillPage/>
-       {/* <HomComponent/>  
+        <HomComponent/> 
+        <AboutPage />    
+        <ServicePage />
+       <PortfolioPage/>
+       <SkillPage/> 
+       <ContactPage/>
+       {/*  
    
       
-     
-      <Contact/> */}
+      */}
 {/*      
         <Box ml={{ base: 0, md: 60 }} p="4">
         {children}

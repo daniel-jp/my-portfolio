@@ -6,18 +6,18 @@ import { SliderMark } from '@chakra-ui/react';
     {
     id:1,
     language:"Java",
-    text:"SpringBoot JPA", 
-    img:"spring-3.svg",
+    text:"Spring Boot", 
+    img:"spring-1.svg",
 
   
   },
   {
     id:2,
     language:"Nodejs",
-    text:"Express.js", 
-    img:"Express-2.jpg",
+    text:"Express js", 
+    img:"nodejs.svg", 
 
-
+ 
   
   }
     ,{id:3,
@@ -29,7 +29,7 @@ import { SliderMark } from '@chakra-ui/react';
   },{
     id:4,
     language:"Database",
-    text:"SQLServer", 
+    text:"SQL Server", 
     img:"microsoft-1.svg",
   
   },

@@ -1,6 +1,6 @@
 import { Box } from '@chakra-ui/react';
+import Home from './pages/HomePage';
 
-import Home from './pages/homePage';
 
 
 function App() {

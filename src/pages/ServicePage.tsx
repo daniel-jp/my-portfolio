@@ -8,7 +8,7 @@ const serviceProps = ServiceProps();
   return( 
     <>
     <Flex  display={"block"}
-      ml={{base:0, md:240}}  justify={'center'} pb={100}
+      ml={{base:0, md:240}}  justify={'center'} pb={20}
       bg={"gray.800"}
       direction={{ base: 'column', sm: 'row' }}
       overflow='hidden'>
@@ -24,7 +24,7 @@ const serviceProps = ServiceProps();
         </Text>
       </Stack>
 <Box>
-    <SimpleGrid columns={{base:1, md:2,lg:3}} p={{base:3,md:10}} spacing={{ base: 2, md: 4 }}>
+    <SimpleGrid columns={{base:1,sm:1, md:1,lg:3}} p={{base:3,md:10}} spacing={{ base: 2, md: 4 }}>
         {
           serviceProps.map((servicep, id)=>(
 
@@ -40,9 +40,7 @@ const serviceProps = ServiceProps();
 
   </SimpleGrid>
   </Box>
-  <Box>
-   
-  </Box>
+ 
 </Flex></>
   )
 }
