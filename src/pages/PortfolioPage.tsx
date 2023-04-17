@@ -2,13 +2,14 @@ import { Box, Button, Container, Flex, Heading, Hide, Link, Show, SimpleGrid, St
 
 import PortfolioComponent from '../components/portfolioComponent/PortfolioComponent';
 import portfolioProps from '../PortfolioProps/PortfolioProps';
+import Footer from '../components/footerComponent/FooterComponent';
 
 function PortfolioPage(){
 const portfolioprops = portfolioProps();
   return( 
     <>
     <Flex  display={"block"}
-      ml={{base:0, md:240}}  justify={'center'} pb={100}
+      ml={{base:0, md:240}}  justify={'center'} pb={100} 
       bg={"gray.800"} 
       direction={{ base: 'column', sm: 'row' }}
       overflow='hidden'>
@@ -26,14 +27,14 @@ const portfolioprops = portfolioProps();
     <Box>
     <SimpleGrid  columns={{base:1, sm:1, md:1,lg:3}} p={{base:3, md:10}} spacing={{ base: 4, md: 4 }}>
         {
-          portfolioprops.map(( portfoliop, id) => (
+          portfolioprops.map((portfoliop) => (
 
             <PortfolioComponent 
             imgc={portfoliop.imgc}
             titlec={portfoliop.titlec} 
             textc={portfoliop.textc} 
             iconc={portfoliop.iconc} 
-            key={id} /> 
+            key={portfoliop.id} /> 
 
           ))
         }
@@ -41,7 +42,7 @@ const portfolioprops = portfolioProps();
   </SimpleGrid>
     </Box>
 
-    <Flex mt={30} ml={{base:0, md:240}} align={"center"} justify={"center"} >
+    <Flex mt={5} ml={{base:0, md:240}} align={"center"} justify={"center"} >
 
       <Link as={"a"} textAlign={"center"}  bg={"purple.500"} w={"200px"} maxW={"full"} rounded={4}  _hover={{
         bg:"#944CAD"}}>
@@ -51,7 +52,9 @@ const portfolioprops = portfolioProps();
 
     </Flex>
  
-</Flex></>
+</Flex>
+<Footer />
+</>
   )
 }
 export default PortfolioPage

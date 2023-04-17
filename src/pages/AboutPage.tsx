@@ -1,16 +1,18 @@
 import { Box, Flex, Heading, SimpleGrid, Stack, Text } from '@chakra-ui/react';
 import { CalendarCheck } from 'phosphor-react';
+import Footer from '../components/footerComponent/FooterComponent';
 
 
 import AboutComponent from '../components/aboutComponent/AboutComponent';
 import AboutProp from '../aboutProp/AboutProp';
+import Layout from '../Layout/Layout';
 
 function AboutPage(){
   const aboutProp = AboutProp();
   return(
     <>
-    <Flex bg={"gray.800"} pr={{base:'0', md:'250'}}
-    pt={100} justify={'center'} 
+    <Flex bg={"gray.800"} pr={{base:'0', md:'250'}} 
+    pt={100} justify={'center'} w={"100vw"}
     display={'block'} 
     direction={{ base: 'column', sm: 'row' }}
     overflow='hidden'>
@@ -30,11 +32,10 @@ function AboutPage(){
         {
           aboutProp.map(( aboutprop ) => (
             <AboutComponent 
+            key={aboutprop.id}
             title={aboutprop.title} 
             text={aboutprop.text} 
-            icon={aboutprop.icon} 
-           
-            />
+            icon={aboutprop.icon}   />
           )) 
         }
         
@@ -98,7 +99,9 @@ function AboutPage(){
     
      </Box>    
 
-    </Flex>
+    </Flex>  
+    
+    <Footer />
     </>
   )
 }

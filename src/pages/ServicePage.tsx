@@ -2,6 +2,7 @@ import { Box, Container, Flex, Heading, SimpleGrid, Stack, Text } from '@chakra-
 
 import ServiceComponent from '../components/servicesComponent/ServicesComponent';
 import ServiceProps from '../serviceProp/ServiceProps';
+import Footer from '../components/footerComponent/FooterComponent';
 
 function ServicePage(){
 const serviceProps = ServiceProps();
@@ -23,10 +24,10 @@ const serviceProps = ServiceProps();
         I would like to illustrate the areas where I work and the types of services I do.
         </Text>
       </Stack>
-<Box>
+    <Box>
     <SimpleGrid columns={{base:1,sm:1, md:1,lg:3}} p={{base:3,md:10}} spacing={{ base: 2, md: 4 }}>
         {
-          serviceProps.map((servicep, id)=>(
+          serviceProps.map((servicep)=>(
 
             <ServiceComponent 
             icon={servicep.icon} 
@@ -41,7 +42,9 @@ const serviceProps = ServiceProps();
   </SimpleGrid>
   </Box>
  
-</Flex></>
+</Flex>
+<Footer />
+</>
   )
 }
 export default ServicePage

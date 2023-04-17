@@ -1,31 +1,27 @@
-import { Box, BoxProps, Flex, IconButton, Text, useColorModeValue } from '@chakra-ui/react';
-import { GitBranch, GithubLogo, XCircle } from 'phosphor-react';
+import { Box, BoxProps, Flex, IconButton, useColorModeValue } from '@chakra-ui/react';
+import { XCircle } from 'phosphor-react';
 import * as React from 'react';
-import { BsGithub } from 'react-icons/bs';
 
-import Logo from '../Logo';
 import NavItem from './NavItem';
+import Logo from '../Logo';
 
 
  
-interface LinkItemProps {
-  name: string; 
-}
-const LinkItems: Array<LinkItemProps> = [
-  { name: 'Home',},
-  { name: 'About'},
-  { name: 'Services'},
-  { name: 'Portfolio' },
-  { name: 'Skills'},
-  { name: 'Contact'},
-];
+
+ const LinkItems = [
+   { id:1, name: 'Home',},
+   { id:2, name: 'About'},
+   { id:3, name: 'Services'},
+   { id:4, name: 'Portfolio' },
+   { id:5, name: 'Skills'},
+   { id:6, name: 'Contact'},
+ ];
 
 interface SidebarProps extends BoxProps {
   onClose: () => void;
 }
 
 function SidebarContent ({ onClose, ...rest }: SidebarProps)  {
-
   return (
     <>
     <Box justifyContent="space-between" 
@@ -50,11 +46,8 @@ function SidebarContent ({ onClose, ...rest }: SidebarProps)  {
       </Flex>
 
       {LinkItems.map((link) => (
-        <NavItem key={link.name} color={"gray.500"} fontSize={"lg"}>
-          {link.name}
-        </NavItem>
+        <NavItem key={link.id} name= {link.name}/> 
       ))}
-   
     </Box>
     </>
   );

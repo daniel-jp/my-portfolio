@@ -45,7 +45,7 @@ function PortfolioComponent({iconc, titlec,textc, imgc}:any){
      <CardFooter mt={-8}>
         <Link shadow={"Dark-lg"} bg={"gray.700"} px={10} alignItems={"center"}
         rounded={"full"} display={"flex"}>
-          <Text fontWeight={"bold"} color={"white"}> visite us</Text>
+          <Text fontWeight={"bold"} color={"white"}> visit website</Text>
          <Icon as={iconc} fontSize={32} fontWeight={"bold"} color={"blue.50"} _hover={{
           cursor:"pointer"
          }}/></Link>

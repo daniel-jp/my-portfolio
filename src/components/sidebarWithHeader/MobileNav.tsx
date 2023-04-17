@@ -38,7 +38,7 @@ function MobileNav ({ onOpen, ...rest }: MobileProps)  {
       top={0}
       left={0} 
       right={0}
-      zIndex={1000}
+      zIndex={10}
     
       px={{ base: 4, md: 4 }} 
       height="14"
