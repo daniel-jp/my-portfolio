@@ -4,7 +4,7 @@ import { IconType } from 'react-icons/lib';
 
 
 
-function AboutComponent ({title,text,icon}:any) {
+function AboutComponent ({ title,text,icon}:any) {
  
   return(
     <>

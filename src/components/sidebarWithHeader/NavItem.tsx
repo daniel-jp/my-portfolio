@@ -14,7 +14,7 @@ import { NavLink as RouteLink } from 'react-router-dom';
   
   
   return (
-    <Link href={name || "" }   
+    <Link href={name || "" } target="_self"
     style={{ textDecoration: 'none' }} _focus={{ boxShadow: 'none' }}
      onClick={() => setActiveLink( name || "/")} color={"gray.400"}>
       <Flex

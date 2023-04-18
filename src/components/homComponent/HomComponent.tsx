@@ -75,13 +75,13 @@ export default function homComponent() {
           <Stack align={'center'}
             bgGradient='linear(to-l, #7928CA, #FF0080)'
             position={'relative'}
-            height={'389px'}
+            height={'389px'}  
             boxShadow={'2xl'} 
             w={{base:"full", md:'full', lg:380}} 
             overflow={'hidden'}  
             borderRadius={"10% 0 10% 0"} 
             py={2}
-            maxW={'full'}
+            maxW={'full'} transition={"transform .3s"}
             _before={{
               content: "''",
               position: 'relative',
@@ -96,7 +96,7 @@ export default function homComponent() {
             }}>
              <Image 
               borderRadius={"10% 0 10% 0"}
-              alt={'Daniel Image'}
+              alt={'Daniel Image'}  
               fit={'cover'}
               align={'center'}
               w={{base:"full", md:'full', lg:369}} 

@@ -5,7 +5,6 @@ import Footer from '../components/footerComponent/FooterComponent';
 
 import AboutComponent from '../components/aboutComponent/AboutComponent';
 import AboutProp from '../aboutProp/AboutProp';
-import Layout from '../Layout/Layout';
 
 function AboutPage(){
   const aboutProp = AboutProp();
@@ -53,7 +52,7 @@ function AboutPage(){
       backgroundColor:'#944CAD',
       }}  w={"full"}>
     
-      <Box left={-2} position={"absolute"} w={5} h={5} borderRadius={"50%"} bg={"red.500"}></Box>
+      <Box left={-2} position={"absolute"} w={5} h={5} borderRadius={"50%"} bg={"#944CAD"}></Box>
       <Stack p={{base:3, sm:3, md:3,lg:70}}  rounded={4}   py={4}  marginBottom={"0"} bg={"gray.900"}
           maxH={"full"} display={'flex'} px={2} mr={{base:0, md:10}} >
           <Box px={2}> 
@@ -61,13 +60,13 @@ function AboutPage(){
             <Box display={'flex'}><CalendarCheck size={22} color={"#F56565"}/><Text pl={2} color={"#F56565"}>2020-2022</Text></Box>
          
           <Box><Text fontSize={['xl','2xl']}  bgGradient='linear(to-l, #8222AF,#9B19D9, #9B19D9, #386283)'
-           bgClip='text' fontWeight={'bold'} textAlign={{base:"start", md:"justify",lg:"start"}}  >Master’s in Software and Data Engineering</Text></Box>
+           bgClip='text' fontWeight={'bold'} textAlign={{base:"start", md:"justify",lg:"start"}}>Master’s in Software and Data Engineering</Text></Box>
           <Box p={2} bg={"#222831"} rounded={4}><Text textAlign={{base:"justify", md:"justify",lg:"start"}} color={"gray.500"}>Right after I finished my degree in Morocco, I joined the Masters in Data Engineering and Software Development at Mohamed V University, Faculty of Sciences.</Text></Box> 
           </SimpleGrid>  
           </Box>
     </Stack>
     <Stack p={{base:3, sm:3, md:3,lg:70}} rounded={4} mr={{base:0, md:10}} my={4} py={4}  bg={"gray.900"}  marginBottom={"0"} px={2} pt={5} maxH={"full"} display={'flex'}>
-    <Box left={-2}  position={"absolute"} w={5} h={5} borderRadius={"50%"} bg={"red.500"}></Box>
+    <Box left={-2}  position={"absolute"} w={5} h={5} borderRadius={"50%"} bg={"#944CAD"}></Box>
           <Box px={2}> 
             <SimpleGrid columns={{ base: 1, md:1}}   color={"#944CAD"}>
             <Box display={'flex'}><CalendarCheck size={22} color={"#F56565"}/><Text pl={2} color={"#F56565"}>2019-2020</Text></Box>
@@ -79,7 +78,7 @@ function AboutPage(){
           </Box>
     </Stack>
     <Stack p={{base:3, sm:3, md:3,lg:70}} rounded={4}  bg={"gray.900"} px={2}  mr={{base:0, md:10}} my={4} py={4} marginBottom={"0"} pt={5} maxH={"full"}  display={'flex'}>
-    <Box left={-2} position={"absolute"} w={5} h={5} borderRadius={"50%"} bg={"red.500"}></Box>
+    <Box left={-2} position={"absolute"} w={5} h={5} borderRadius={"50%"} bg={"#944CAD"}></Box>
         
           <Box px={2}> 
           <SimpleGrid columns={{ base: 1, md:1}}   color={"#944CAD"}>
@@ -94,7 +93,7 @@ function AboutPage(){
           </Box>
          
      </Stack>
-       <Box left={-2} position={"absolute"} w={5} h={5} borderRadius={"50%"} bg={"red.500"}></Box>
+       <Box left={-2} position={"absolute"} w={5} h={5} borderRadius={"50%"} bg={"#944CAD"}></Box>
      </Box>
     
      </Box>    
